@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    .calc{
+        background-color: #212121;
+        color: #ffff;
+        font-family: "Inter", sans-serif;
+        width: 16rem;
+        height: 21rem;
+        padding: 10px;
+        border-radius: 15px;
+        overflow: auto;
+        .result{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            padding: 30px;
+            height: 3.5rem;
+            h2{
+                margin: 0;
+                font-weight: bold;
+            }
+            h4{
+                margin: 0 0 10px 0;
+                font-size: 12px;
+                color: #b1b1b1;
+            }
+        }
+        .digits{
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            button{
+                background-color: #cdcdcd;
+                border: none;
+                height: 3rem;
+                margin: 2px;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+        }
+        .bottom-operators{
+            display: grid;
+            grid-template-columns: 20% 80%;
+            margin-bottom: 0.3rem;
+            button{
+                background-color: #cdcdcd;
+                border: none;
+                height: 3rem;
+                margin: 2px;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+        }
+    }
+}

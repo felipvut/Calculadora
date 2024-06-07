@@ -1,0 +1,31 @@
+<div class="page">
+  <div class="calc">
+    <div class="result">
+      <h4>{{lastOperation}}</h4>
+      <h2>{{operation}}</h2>
+    </div>
+    <div class="digits">
+      <button (click)="addAction('CE')">CE</button>
+      <button (click)="addAction('x')"><i class="fa-solid fa-x"></i></button>
+      <button (click)="addAction('-')"><i class="fa-solid fa-minus"></i></button>
+      <button (click)="addAction('+')"><i class="fa-solid fa-plus"></i></button>
+      <button (click)="addAction('÷')"><i class="fa-solid fa-divide"></i></button>
+      <button (click)="addAction('1')">1</button>
+      <button (click)="addAction('2')">2</button>
+      <button (click)="addAction('3')">3</button>
+      <button (click)="addAction('4')">4</button>
+      <button (click)="addAction('5')">5</button>
+      <button (click)="addAction('6')">6</button>
+      <button (click)="addAction('7')">7</button>
+      <button (click)="addAction('8')">8</button>
+      <button (click)="addAction('9')">9</button>
+      <button (click)="addAction('0')">0</button>
+    </div>
+    <div class="bottom-operators">
+      <button (click)="addAction('.')">.</button>
+      <button (click)="addAction('=')">=</button>
+    </div>
+  </div>
+</div>
+
+<router-outlet />
