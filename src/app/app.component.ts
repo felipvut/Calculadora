@@ -30,6 +30,8 @@ export class AppComponent {
       }
     } else if(operation == 'CE') {
       return this.operation = '0'
+    } else if(operation == 'C') {
+      return this.lastOperation = ''
     } else if(operation == '=') {
       this.lastOperation = this.operation
       this.parsetoEvalFormat()
