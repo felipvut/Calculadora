@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 .page{
     display: flex;
     justify-content: center;
@@ -10,9 +10,11 @@
     .calc{
         background-color: #212121;
         color: #ffff;
-        font-family: "Inter", sans-serif;
+        font-family: "Work Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
         width: 16rem;
-        height: 21rem;
+        // height: 21rem;
         padding: 10px;
         border-radius: 15px;
         overflow: auto;
@@ -20,7 +22,7 @@
             display: flex;
             flex-direction: column;
             align-items: end;
-            padding: 30px;
+            padding: 20px;
             height: 3.5rem;
             h2{
                 margin: 0;
@@ -32,29 +34,39 @@
                 color: #b1b1b1;
             }
         }
-        .digits{
+        .top-buttons{
             display: grid;
-            grid-template-columns: 20% 20% 20% 20% 20%;
+            grid-template-columns: 50% 50%;
             button{
-                background-color: #cdcdcd;
+                background-color: #9c9c9c;
                 border: none;
                 height: 3rem;
                 margin: 2px;
                 border-radius: 5px;
-                font-weight: bold;
+                font-size: 17px;
+            }
+            .number{
+                background-color: #cdcdcd;
             }
         }
-        .bottom-operators{
+        .digits{
             display: grid;
-            grid-template-columns: 20% 80%;
-            margin-bottom: 0.3rem;
+            grid-template-columns: 25% 25% 25% 25%;
             button{
-                background-color: #cdcdcd;
+                background-color: #9c9c9c;
                 border: none;
                 height: 3rem;
                 margin: 2px;
                 border-radius: 5px;
-                font-weight: bold;
+            }
+            .number{
+                background-color: #b3b3b3;
+                font-size: 17px;
+            }
+            .equal{
+                background: #7171cb;
+                color: #fff;
+            
             }
         }
     }

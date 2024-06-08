@@ -18,6 +18,7 @@ export class AppComponent {
   addAction(operation: string) {
     if(parseInt(operation) || operation == '0') {
       if(this.operation == '0') {
+        this.isResult = false
         return this.operation = operation
       } else {
         if(!this.isResult) {
@@ -29,6 +30,8 @@ export class AppComponent {
       }
     } else if(operation == 'CE') {
       return this.operation = '0'
+    } else if(operation == 'C') {
+      return this.lastOperation = ''
     } else if(operation == '=') {
       this.lastOperation = this.operation
       this.parsetoEvalFormat()
