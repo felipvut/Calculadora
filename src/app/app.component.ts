@@ -18,6 +18,7 @@ export class AppComponent {
   addAction(operation: string) {
     if(parseInt(operation) || operation == '0') {
       if(this.operation == '0') {
+        this.isResult = false
         return this.operation = operation
       } else {
         if(!this.isResult) {
