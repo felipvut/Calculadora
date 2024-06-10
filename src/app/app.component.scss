@@ -14,7 +14,6 @@
         font-optical-sizing: auto;
         font-weight: 300;
         width: 16rem;
-        // height: 21rem;
         padding: 10px;
         border-radius: 15px;
         overflow: auto;
@@ -44,6 +43,7 @@
                 margin: 2px;
                 border-radius: 5px;
                 font-size: 17px;
+                cursor: pointer;
             }
             .number{
                 background-color: #cdcdcd;
@@ -58,6 +58,7 @@
                 height: 3rem;
                 margin: 2px;
                 border-radius: 5px;
+                cursor: pointer;
             }
             .number{
                 background-color: #b3b3b3;
@@ -66,7 +67,6 @@
             .equal{
                 background: #7171cb;
                 color: #fff;
-            
             }
         }
     }
